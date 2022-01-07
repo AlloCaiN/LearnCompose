@@ -10,3 +10,4 @@ rootProject.name = "learn_compose"
 include(":app")
 
 apply { from("flutter_settings.gradle") }
+include(":fluttermodule")
