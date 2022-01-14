@@ -11,3 +11,4 @@ include(":app")
 
 apply { from("flutter_settings.gradle") }
 include(":fluttermodule")
+include(":openglmodule")
