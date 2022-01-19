@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.allo.openglmodular">
     <application>
-
+        <activity android:name=".env.enterance.GLActivity"/>
+        <activity android:name=".env.enterance.GLNativeActivity"/>
     </application>
 </manifest>

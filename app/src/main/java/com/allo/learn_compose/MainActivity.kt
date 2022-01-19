@@ -15,6 +15,7 @@ import androidx.compose.ui.unit.Dp
 import com.allo.flutterui.util.FlutterEngineManager
 
 import com.allo.learn_compose.ui.theme.Learn_composeTheme
+import com.allo.openglmodular.env.util.OpenglRenderUtil
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,13 +41,13 @@ fun Greeting() {
             Text(text = "Flutter")
         }
         Button(onClick = {
-           // OpenglRenderUtil.routeToGLActivity(context)
+            OpenglRenderUtil.routeToGLActivity(context)
             //    startActivity(context,FlutterActivity.createDefaultIntent(context),null)
         }) {
             Text(text = "OpenGL")
         }
         Button(onClick = {
-            //OpenglRenderUtil.routeToGLNativeActivity(context)
+            OpenglRenderUtil.routeToGLNativeActivity(context)
             //    startActivity(context,FlutterActivity.createDefaultIntent(context),null)
         }) {
             Text(text = "OpenGLNative")
