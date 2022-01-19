@@ -21,7 +21,6 @@
             </intent-filter>
         </activity>
         <!--需要注册flutteractivity-->
-
     </application>
 
 </manifest>

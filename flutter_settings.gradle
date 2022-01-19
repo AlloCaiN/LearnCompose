@@ -2,5 +2,8 @@
 setBinding(new Binding([gradle: this]))
 evaluate(new File(
         settingsDir.parentFile,
-        '/flutter_render/.android/include_flutter.groovy'
+        '/flutterlib/.android/include_flutter.groovy'
 ))
+
+include ':flutterlib'
+project(':flutterlib').projectDir = new File('../flutterlib')

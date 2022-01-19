@@ -12,10 +12,9 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
-import androidx.compose.ui.unit.dp
-import com.allo.fluttermodule.util.FlutterEngineManager
+import com.allo.flutterui.util.FlutterEngineManager
+
 import com.allo.learn_compose.ui.theme.Learn_composeTheme
-import com.allo.openglmodule.manager.OpenglRenderUtil
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,13 +40,13 @@ fun Greeting() {
             Text(text = "Flutter")
         }
         Button(onClick = {
-            OpenglRenderUtil.routeToGLActivity(context)
+           // OpenglRenderUtil.routeToGLActivity(context)
             //    startActivity(context,FlutterActivity.createDefaultIntent(context),null)
         }) {
             Text(text = "OpenGL")
         }
         Button(onClick = {
-            OpenglRenderUtil.routeToGLNativeActivity(context)
+            //OpenglRenderUtil.routeToGLNativeActivity(context)
             //    startActivity(context,FlutterActivity.createDefaultIntent(context),null)
         }) {
             Text(text = "OpenGLNative")
@@ -59,7 +58,5 @@ fun Greeting() {
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
-    Learn_composeTheme {
-        Greeting()
-    }
+
 }

@@ -10,10 +10,12 @@
         <option name="gradleJvm" value="Embedded JDK" />
         <option name="modules">
           <set>
-            <option value="$PROJECT_DIR$/../flutter_render/.android/Flutter" />
+            <option value="$PROJECT_DIR$/../flutterlib" />
+            <option value="$PROJECT_DIR$/../flutterlib/.android/Flutter" />
+            <option value="$PROJECT_DIR$/../flutterlib/package/flutterui/android" />
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/fluttermodule" />
+            <option value="$PROJECT_DIR$/openglmodular" />
             <option value="$PROJECT_DIR$/openglmodule" />
           </set>
         </option>

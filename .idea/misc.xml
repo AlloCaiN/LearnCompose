@@ -5,10 +5,13 @@
       <map>
         <entry key="../../../../../../layout/compose-model-1641465871578.xml" value="2.0" />
         <entry key="../../../../../../layout/compose-model-1641544018845.xml" value="0.1" />
-        <entry key="../../../../../layout/compose-model-1642132016356.xml" value="2.0" />
-        <entry key="openglmodule/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="../../../../../../layout/compose-model-1642494306182.xml" value="0.9602888086642599" />
+        <entry key="../../../../../../layout/compose-model-1642585593713.xml" value="0.15698653198653198" />
       </map>
     </option>
+  </component>
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <type id="android" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
