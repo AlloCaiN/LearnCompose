@@ -3,6 +3,7 @@ package com.allo.openglmodular.env.gl
 import android.content.res.Resources
 import android.opengl.GLES30
 import android.util.Log
+import com.allo.openglmodular.env.shader.GLShader
 import java.io.ByteArrayOutputStream
 
 object ShaderUtils {
@@ -75,6 +76,10 @@ object ShaderUtils {
         val vertexText = loadFromRawFile(vShaderName,resource) ?:return 0
         val fragText = loadFromRawFile(fShaderName,resource) ?:return 0
         return createProgram(vertexText,fragText)
+    }
+
+    fun loadShader(vShaderString : String,fShaderString: String) : Int {
+        return createProgram(vShaderString,fShaderString)
     }
 
 

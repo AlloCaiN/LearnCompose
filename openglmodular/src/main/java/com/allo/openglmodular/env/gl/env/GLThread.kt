@@ -37,8 +37,11 @@ class GLThread(id: Int) {
         }
     }
 
+    fun startTimerRender(runnable: () -> Unit,timer : Long) {
+        thread?.postDelayed(runnable, timer)
+    }
+
     fun renderImpl() {
-        // 错在了一起执行
         val enc = glEnv?:return
         val surface = enc.eglSurface
         EGL14.eglSwapBuffers(enc.eglDisplay,surface)

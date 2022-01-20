@@ -19,7 +19,7 @@ class GLActivity: Activity() {
                 height: Int
             ) {
                 render.queue {
-                    render.initProgram(this@GLActivity)
+                    render.initProgram()
                     render.bindSurface(surface)
                     render.onSurfaceChanged(width, height)
                     render.onDrawFrame()
